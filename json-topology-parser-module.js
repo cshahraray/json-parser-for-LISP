@@ -1,18 +1,18 @@
 const jsonTopologyParser = {
     operatorOCU_UP: function (opName, ocuID) {
-        return `(${opName} O-CU-UP-${ocuID})`
+        return `(opocu ${opName} O-CU-UP-${ocuID})`
     },
 
     operatorOCU_CP: function (opName, ocuID) {
-        return `(${opName} O-CU-CP-${ocuID})`
+        return `(opocu ${opName} O-CU-CP-${ocuID})`
     },
     
     ocuOdu: function(ocuID, oduName) {
-        return `(O-CU-CP-${ocuID} O-CU-UP-${ocuID} ${oduName})`
+        return `(ocuodu O-CU-CP-${ocuID} O-CU-UP-${ocuID} ${oduName})`
     },
 
     oduOru: function(oduName, oruName) {
-        return `(${oduName} ${oruName})`
+        return `(oduoru ${oduName} ${oruName})`
     },
 
     getNodeId: function(componentName) {

@@ -4,9 +4,9 @@ let jsonTopParser = require('./json-topology-parser-module.js')
 let fs = require('fs')
 let topology = require('./topology.js');
 
-function parseOpName (operatorName) {
+function parseSpacedStrings (operatorName) {
     nameArr = operatorName.split(' ')
-    return nameArr.join('')
+    return nameArr.join('-')
 }
 
 function main (topologyJSON) {
@@ -45,7 +45,7 @@ function main (topologyJSON) {
         let oduORUs;
 
         operators.forEach(operator => {
-            opName = parseOpName(operator)
+            opName = parseSpacedStrings(operator)
             fileWriter.write("\r\n")
 
             fileWriter.write(`;; Topology for ${operator}`)
