@@ -1,37 +1,90 @@
-let jsonParser = require('./helper-module.js')
-// let topology = require('./topology.js')
+let jsonParser = require('./json-parser-module.js')
+let getTopologyMapJson = require('./json-topology-module.js')
+let jsonTopParser = require('./json-topology-parser-module.js')
 let fs = require('fs')
 let topology = require('./topology.js');
-const { writer } = require('repl');
 
 // const topology = JSON.parse("./topology.json")
+function parseOpName (operatorName) {
+    nameArr = operatorName.split(' ')
+    return nameArr.join('')
+}
 
-function main (pathsJSON, topologyJSON) {
+function main (topologyJSON) {
         const {slices, areas} = topologyJSON.definitions;
-        let slicesWriter = fs.createWriteStream(pathsJSON.slices)
-            slices.forEach( slice => {
-                slicesWriter.write(jsonParser.slice(slice) + "\r\n")
-            });
-        
-        let areasWriter = fs.createWriteStream(pathsJSON.areas)
-            areas.forEach( area => 
-                areasWriter.write(jsonParser.area(area) + "\r\n" )
+        let fileWriter = fs.createWriteStream("./output.txt")
+
+        fileWriter.write(';; slices')
+        fileWriter.write("\r\n")
+
+        slices.forEach( slice => {
+            fileWriter.write(jsonParser.slice(slice) + "\r\n")
+        });
+
+        fileWriter.write(';; areas')
+        fileWriter.write("\r\n")
+        areas.forEach( area => 
+            fileWriter.write(jsonParser.area(area) + "\r\n" )
         )
 
+        fileWriter.write(';; nodes')
+        fileWriter.write("\r\n")
         const {nodes} = topologyJSON;
-
-        let nodesWriter = fs.createWriteStream(pathsJSON.nodes)
-            nodes.forEach( node => 
-                nodesWriter.write(jsonParser.node(node) + "\r\n" )
+        nodes.forEach( node => 
+            fileWriter.write(jsonParser.node(node) + "\r\n" )
         )
 
+        fileWriter.write(';; topology')
+        fileWriter.write("\r\n")
+        const mappedTopologyJson = getTopologyMapJson(topology.definitions.slices)
+
+        const operators = Object.keys(mappedTopologyJson)
+        let opName;
+        let opOCUS;
+        let ocuID;
+        let ocuODUs;
+        let oduORUs;
+
+        operators.forEach(operator => {
+            opName = parseOpName(operator)
+            fileWriter.write("\r\n")
+
+            fileWriter.write(`;; Topology for ${operator}`)
+            fileWriter.write("\r\n")
+
+
+
+            opOCUS = Object.keys(mappedTopologyJson[operator])
+
+
+            opOCUS.forEach( ocu => {
+                ocuID = jsonTopParser.getNodeId(ocu)
+                fileWriter.write(jsonTopParser.operatorOCU_CP(opName, ocuID) + "\r\n")
+                fileWriter.write(jsonTopParser.operatorOCU_UP(opName, ocuID) + "\r\n")
+                fileWriter.write("\r\n")
+
+                ocuODUs = Object.keys(mappedTopologyJson[operator][ocu])
+                
+                ocuODUs.forEach( odu => {
+                    fileWriter.write(jsonTopParser.ocuOdu(ocuID, odu) + "\r\n")
+
+                    oduORUs = mappedTopologyJson[operator][ocu][odu]
+
+
+                    oduORUs.forEach(oru => {
+                        fileWriter.write(jsonTopParser.oduOru(odu, oru)+ "\r\n")
+                    })
+                })
+            
+        })
+
+
+        
+
+    })
 }
 
 
-const paths = {
-    nodes: "./nodes.txt",
-    slices: "./slices.txt",
-    areas: "./areas.txt"
-}
-main(paths, topology)
+
+main(topology)
 // console.log(jsonParser.node(topology.nodes[0]))
