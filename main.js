@@ -4,7 +4,6 @@ let jsonTopParser = require('./json-topology-parser-module.js')
 let fs = require('fs')
 let topology = require('./topology.js');
 
-// const topology = JSON.parse("./topology.json")
 function parseOpName (operatorName) {
     nameArr = operatorName.split(' ')
     return nameArr.join('')
@@ -87,4 +86,3 @@ function main (topologyJSON) {
 
 
 main(topology)
-// console.log(jsonParser.node(topology.nodes[0]))
