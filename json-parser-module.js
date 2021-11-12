@@ -33,7 +33,7 @@ const Json2ListParser = {
         const {id, owner, area, x, y, sector} = nodeJSON
         const func = nodeJSON.function;
 
-        return `(node ${id} ${parseSpacedStrings(owner)} ${area})`
+        return `(node ${id} ${parseSpacedStrings(owner)} a${area} ${func})`
     },
 
     node: function (nodeJSON) {
