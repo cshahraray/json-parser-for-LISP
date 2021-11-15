@@ -7,13 +7,13 @@ function parseSpacedStrings (operatorName) {
 function parseArea (areaId) {
     switch (areaId) {
         case 0:
-            return "north"
+            return "North"
         case 1: 
-            return "east"
+            return "East"
         case 2:
-            return "south"
+            return "South"
         case 3:
-            return "west"
+            return "West"
     }
 }
 
