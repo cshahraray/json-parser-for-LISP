@@ -55,33 +55,50 @@ function main (topologyJSON) {
 
 
             opOCUS = Object.keys(mappedTopologyJson[operator])
-
+            fileWriter.write("\r\n")
 
             opOCUS.forEach( ocu => {
                 ocuID = jsonTopParser.getNodeId(ocu)
                 fileWriter.write(jsonTopParser.operatorOCU_CP(opName, ocuID) + "\r\n")
                 fileWriter.write(jsonTopParser.operatorOCU_UP(opName, ocuID) + "\r\n")
-                fileWriter.write("\r\n")
+            })
 
+            fileWriter.write("\r\n")
+            fileWriter.write("\r\n")
+
+            fileWriter.write("\r\n")
+            fileWriter.write("\r\n")
+
+
+            opOCUS.forEach( ocu => {
+                ocuID = jsonTopParser.getNodeId(ocu)
                 ocuODUs = Object.keys(mappedTopologyJson[operator][ocu])
                 
                 ocuODUs.forEach( odu => {
                     fileWriter.write(jsonTopParser.ocuOdu(ocuID, odu) + "\r\n")
+                })
+                fileWriter.write("\r\n")
+                fileWriter.write("\r\n")
 
+            })
+
+            opOCUS.forEach( ocu => {
+                ocuID = jsonTopParser.getNodeId(ocu)
+                ocuODUs = Object.keys(mappedTopologyJson[operator][ocu])
+                ocuODUs.forEach( odu => {
                     oduORUs = mappedTopologyJson[operator][ocu][odu]
-
-
                     oduORUs.forEach(oru => {
                         fileWriter.write(jsonTopParser.oduOru(odu, oru)+ "\r\n")
                     })
+
                 })
-            
+            })
+
+            fileWriter.write("\r\n")
+            fileWriter.write("\r\n")
+
         })
-
-
-        
-
-    })
+            
 }
 
 

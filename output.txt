@@ -73,144 +73,184 @@
 
 ;; Topology for Public Safety
 (oper Public-Safety)
+
 (op-ocu Public-Safety O-CU-CP-111)
 (op-ocu Public-Safety O-CU-UP-111)
-
-(ocu-odu O-CU-CP-111 O-CU-UP-111 O-DU-1111)
-(odu-oru O-DU-1111 O-RU-11111)
-(odu-oru O-DU-1111 O-RU-11112)
-(odu-oru O-DU-1111 O-RU-11113)
-(ocu-odu O-CU-CP-111 O-CU-UP-111 O-DU-1112)
-(odu-oru O-DU-1112 O-RU-11121)
-(odu-oru O-DU-1112 O-RU-11122)
-(odu-oru O-DU-1112 O-RU-11123)
 (op-ocu Public-Safety O-CU-CP-112)
 (op-ocu Public-Safety O-CU-UP-112)
-
-(ocu-odu O-CU-CP-112 O-CU-UP-112 O-DU-1121)
-(odu-oru O-DU-1121 O-RU-11211)
-(odu-oru O-DU-1121 O-RU-11212)
-(odu-oru O-DU-1121 O-RU-11213)
-(ocu-odu O-CU-CP-112 O-CU-UP-112 O-DU-1122)
-(odu-oru O-DU-1122 O-RU-11221)
-(odu-oru O-DU-1122 O-RU-11222)
-(odu-oru O-DU-1122 O-RU-11223)
 (op-ocu Public-Safety O-CU-CP-121)
 (op-ocu Public-Safety O-CU-UP-121)
-
-(ocu-odu O-CU-CP-121 O-CU-UP-121 O-DU-1211)
-(odu-oru O-DU-1211 O-RU-12111)
-(odu-oru O-DU-1211 O-RU-12112)
-(odu-oru O-DU-1211 O-RU-12113)
-(ocu-odu O-CU-CP-121 O-CU-UP-121 O-DU-1212)
-(odu-oru O-DU-1212 O-RU-12121)
-(odu-oru O-DU-1212 O-RU-12122)
-(odu-oru O-DU-1212 O-RU-12123)
 (op-ocu Public-Safety O-CU-CP-122)
 (op-ocu Public-Safety O-CU-UP-122)
-
-(ocu-odu O-CU-CP-122 O-CU-UP-122 O-DU-1221)
-(odu-oru O-DU-1221 O-RU-12211)
-(odu-oru O-DU-1221 O-RU-12212)
-(odu-oru O-DU-1221 O-RU-12213)
-(ocu-odu O-CU-CP-122 O-CU-UP-122 O-DU-1222)
-(odu-oru O-DU-1222 O-RU-12221)
-(odu-oru O-DU-1222 O-RU-12222)
-(odu-oru O-DU-1222 O-RU-12223)
 (op-ocu Public-Safety O-CU-CP-131)
 (op-ocu Public-Safety O-CU-UP-131)
-
-(ocu-odu O-CU-CP-131 O-CU-UP-131 O-DU-1311)
-(odu-oru O-DU-1311 O-RU-13111)
-(odu-oru O-DU-1311 O-RU-13112)
-(odu-oru O-DU-1311 O-RU-13113)
-(ocu-odu O-CU-CP-131 O-CU-UP-131 O-DU-1312)
-(odu-oru O-DU-1312 O-RU-13121)
-(odu-oru O-DU-1312 O-RU-13122)
-(odu-oru O-DU-1312 O-RU-13123)
 (op-ocu Public-Safety O-CU-CP-132)
 (op-ocu Public-Safety O-CU-UP-132)
 
+
+
+
+(ocu-odu O-CU-CP-111 O-CU-UP-111 O-DU-1111)
+(ocu-odu O-CU-CP-111 O-CU-UP-111 O-DU-1112)
+
+
+(ocu-odu O-CU-CP-112 O-CU-UP-112 O-DU-1121)
+(ocu-odu O-CU-CP-112 O-CU-UP-112 O-DU-1122)
+
+
+(ocu-odu O-CU-CP-121 O-CU-UP-121 O-DU-1211)
+(ocu-odu O-CU-CP-121 O-CU-UP-121 O-DU-1212)
+
+
+(ocu-odu O-CU-CP-122 O-CU-UP-122 O-DU-1221)
+(ocu-odu O-CU-CP-122 O-CU-UP-122 O-DU-1222)
+
+
+(ocu-odu O-CU-CP-131 O-CU-UP-131 O-DU-1311)
+(ocu-odu O-CU-CP-131 O-CU-UP-131 O-DU-1312)
+
+
 (ocu-odu O-CU-CP-132 O-CU-UP-132 O-DU-1321)
+(ocu-odu O-CU-CP-132 O-CU-UP-132 O-DU-1322)
+
+
+(odu-oru O-DU-1111 O-RU-11111)
+(odu-oru O-DU-1111 O-RU-11112)
+(odu-oru O-DU-1111 O-RU-11113)
+(odu-oru O-DU-1112 O-RU-11121)
+(odu-oru O-DU-1112 O-RU-11122)
+(odu-oru O-DU-1112 O-RU-11123)
+(odu-oru O-DU-1121 O-RU-11211)
+(odu-oru O-DU-1121 O-RU-11212)
+(odu-oru O-DU-1121 O-RU-11213)
+(odu-oru O-DU-1122 O-RU-11221)
+(odu-oru O-DU-1122 O-RU-11222)
+(odu-oru O-DU-1122 O-RU-11223)
+(odu-oru O-DU-1211 O-RU-12111)
+(odu-oru O-DU-1211 O-RU-12112)
+(odu-oru O-DU-1211 O-RU-12113)
+(odu-oru O-DU-1212 O-RU-12121)
+(odu-oru O-DU-1212 O-RU-12122)
+(odu-oru O-DU-1212 O-RU-12123)
+(odu-oru O-DU-1221 O-RU-12211)
+(odu-oru O-DU-1221 O-RU-12212)
+(odu-oru O-DU-1221 O-RU-12213)
+(odu-oru O-DU-1222 O-RU-12221)
+(odu-oru O-DU-1222 O-RU-12222)
+(odu-oru O-DU-1222 O-RU-12223)
+(odu-oru O-DU-1311 O-RU-13111)
+(odu-oru O-DU-1311 O-RU-13112)
+(odu-oru O-DU-1311 O-RU-13113)
+(odu-oru O-DU-1312 O-RU-13121)
+(odu-oru O-DU-1312 O-RU-13122)
+(odu-oru O-DU-1312 O-RU-13123)
 (odu-oru O-DU-1321 O-RU-13211)
 (odu-oru O-DU-1321 O-RU-13212)
 (odu-oru O-DU-1321 O-RU-13213)
-(ocu-odu O-CU-CP-132 O-CU-UP-132 O-DU-1322)
 (odu-oru O-DU-1322 O-RU-13221)
 (odu-oru O-DU-1322 O-RU-13222)
 (odu-oru O-DU-1322 O-RU-13223)
 
+
+
 ;; Topology for Operator A
 (oper Operator-A)
+
 (op-ocu Operator-A O-CU-CP-121)
 (op-ocu Operator-A O-CU-UP-121)
-
-(ocu-odu O-CU-CP-121 O-CU-UP-121 O-DU-1211)
-(odu-oru O-DU-1211 O-RU-12111)
-(odu-oru O-DU-1211 O-RU-12112)
-(odu-oru O-DU-1211 O-RU-12113)
-(ocu-odu O-CU-CP-121 O-CU-UP-121 O-DU-1212)
-(odu-oru O-DU-1212 O-RU-12121)
-(odu-oru O-DU-1212 O-RU-12122)
-(odu-oru O-DU-1212 O-RU-12123)
 (op-ocu Operator-A O-CU-CP-122)
 (op-ocu Operator-A O-CU-UP-122)
 
+
+
+
+(ocu-odu O-CU-CP-121 O-CU-UP-121 O-DU-1211)
+(ocu-odu O-CU-CP-121 O-CU-UP-121 O-DU-1212)
+
+
 (ocu-odu O-CU-CP-122 O-CU-UP-122 O-DU-1221)
+(ocu-odu O-CU-CP-122 O-CU-UP-122 O-DU-1222)
+
+
+(odu-oru O-DU-1211 O-RU-12111)
+(odu-oru O-DU-1211 O-RU-12112)
+(odu-oru O-DU-1211 O-RU-12113)
+(odu-oru O-DU-1212 O-RU-12121)
+(odu-oru O-DU-1212 O-RU-12122)
+(odu-oru O-DU-1212 O-RU-12123)
 (odu-oru O-DU-1221 O-RU-12211)
 (odu-oru O-DU-1221 O-RU-12212)
 (odu-oru O-DU-1221 O-RU-12213)
-(ocu-odu O-CU-CP-122 O-CU-UP-122 O-DU-1222)
 (odu-oru O-DU-1222 O-RU-12221)
 (odu-oru O-DU-1222 O-RU-12222)
 (odu-oru O-DU-1222 O-RU-12223)
 
+
+
 ;; Topology for Operator 1
 (oper Operator-1)
+
 (op-ocu Operator-1 O-CU-CP-111)
 (op-ocu Operator-1 O-CU-UP-111)
-
-(ocu-odu O-CU-CP-111 O-CU-UP-111 O-DU-1111)
-(odu-oru O-DU-1111 O-RU-11111)
-(odu-oru O-DU-1111 O-RU-11112)
-(odu-oru O-DU-1111 O-RU-11113)
-(ocu-odu O-CU-CP-111 O-CU-UP-111 O-DU-1112)
-(odu-oru O-DU-1112 O-RU-11121)
-(odu-oru O-DU-1112 O-RU-11122)
-(odu-oru O-DU-1112 O-RU-11123)
 (op-ocu Operator-1 O-CU-CP-112)
 (op-ocu Operator-1 O-CU-UP-112)
 
+
+
+
+(ocu-odu O-CU-CP-111 O-CU-UP-111 O-DU-1111)
+(ocu-odu O-CU-CP-111 O-CU-UP-111 O-DU-1112)
+
+
 (ocu-odu O-CU-CP-112 O-CU-UP-112 O-DU-1121)
+(ocu-odu O-CU-CP-112 O-CU-UP-112 O-DU-1122)
+
+
+(odu-oru O-DU-1111 O-RU-11111)
+(odu-oru O-DU-1111 O-RU-11112)
+(odu-oru O-DU-1111 O-RU-11113)
+(odu-oru O-DU-1112 O-RU-11121)
+(odu-oru O-DU-1112 O-RU-11122)
+(odu-oru O-DU-1112 O-RU-11123)
 (odu-oru O-DU-1121 O-RU-11211)
 (odu-oru O-DU-1121 O-RU-11212)
 (odu-oru O-DU-1121 O-RU-11213)
-(ocu-odu O-CU-CP-112 O-CU-UP-112 O-DU-1122)
 (odu-oru O-DU-1122 O-RU-11221)
 (odu-oru O-DU-1122 O-RU-11222)
 (odu-oru O-DU-1122 O-RU-11223)
 
+
+
 ;; Topology for Operator C
 (oper Operator-C)
+
 (op-ocu Operator-C O-CU-CP-131)
 (op-ocu Operator-C O-CU-UP-131)
-
-(ocu-odu O-CU-CP-131 O-CU-UP-131 O-DU-1311)
-(odu-oru O-DU-1311 O-RU-13111)
-(odu-oru O-DU-1311 O-RU-13112)
-(odu-oru O-DU-1311 O-RU-13113)
-(ocu-odu O-CU-CP-131 O-CU-UP-131 O-DU-1312)
-(odu-oru O-DU-1312 O-RU-13121)
-(odu-oru O-DU-1312 O-RU-13122)
-(odu-oru O-DU-1312 O-RU-13123)
 (op-ocu Operator-C O-CU-CP-132)
 (op-ocu Operator-C O-CU-UP-132)
 
+
+
+
+(ocu-odu O-CU-CP-131 O-CU-UP-131 O-DU-1311)
+(ocu-odu O-CU-CP-131 O-CU-UP-131 O-DU-1312)
+
+
 (ocu-odu O-CU-CP-132 O-CU-UP-132 O-DU-1321)
+(ocu-odu O-CU-CP-132 O-CU-UP-132 O-DU-1322)
+
+
+(odu-oru O-DU-1311 O-RU-13111)
+(odu-oru O-DU-1311 O-RU-13112)
+(odu-oru O-DU-1311 O-RU-13113)
+(odu-oru O-DU-1312 O-RU-13121)
+(odu-oru O-DU-1312 O-RU-13122)
+(odu-oru O-DU-1312 O-RU-13123)
 (odu-oru O-DU-1321 O-RU-13211)
 (odu-oru O-DU-1321 O-RU-13212)
 (odu-oru O-DU-1321 O-RU-13213)
-(ocu-odu O-CU-CP-132 O-CU-UP-132 O-DU-1322)
 (odu-oru O-DU-1322 O-RU-13221)
 (odu-oru O-DU-1322 O-RU-13222)
 (odu-oru O-DU-1322 O-RU-13223)
+
+
