@@ -4,6 +4,20 @@ function parseSpacedStrings (operatorName) {
     return nameArr.join('-')
 }
 
+function parseArea (areaId) {
+    switch (areaId) {
+        case 0:
+            return "north"
+        case 1: 
+            return "east"
+        case 2:
+            return "south"
+        case 3:
+            return "west"
+    }
+}
+
+
 const Json2ListParser = {
     slice: function (sliceJSON) {
         const {id, name, node} = sliceJSON
@@ -19,21 +33,21 @@ const Json2ListParser = {
     odu2Shop3: function (nodeJSON) {
         const {id, owner, area, x, y} = nodeJSON
     
-        return `(node ${id} ${parseSpacedStrings(owner)} ${area} ${nodeJSON.function})`
+        return `(node ${id} ${parseSpacedStrings(owner)} ${parseArea(area)} ${nodeJSON.function})`
 
     },
 
     ocu2Shop3: function (nodeJSON) {
         const {id, owner, area} = nodeJSON;
 
-        return `(node ${id} ${parseSpacedStrings(owner)} ${area} ${nodeJSON.function})`
+        return `(node ${id} ${parseSpacedStrings(owner)} ${parseArea(area)} ${nodeJSON.function})`
     },
 
     oru2Shop3: function (nodeJSON) {
         const {id, owner, area, x, y, sector} = nodeJSON
         const func = nodeJSON.function;
 
-        return `(node ${id} ${parseSpacedStrings(owner)} a${area} ${func})`
+        return `(node ${id} ${parseSpacedStrings(owner)} ${parseArea(area)} ${func})`
     },
 
     node: function (nodeJSON) {
