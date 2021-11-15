@@ -72,6 +72,7 @@
 ;; topology
 
 ;; Topology for Public Safety
+(oper Public-Safety)
 (op-ocu Public-Safety O-CU-CP-111)
 (op-ocu Public-Safety O-CU-UP-111)
 
@@ -140,6 +141,7 @@
 (odu-oru O-DU-1322 O-RU-13223)
 
 ;; Topology for Operator A
+(oper Operator-A)
 (op-ocu Operator-A O-CU-CP-121)
 (op-ocu Operator-A O-CU-UP-121)
 
@@ -164,6 +166,7 @@
 (odu-oru O-DU-1222 O-RU-12223)
 
 ;; Topology for Operator 1
+(oper Operator-1)
 (op-ocu Operator-1 O-CU-CP-111)
 (op-ocu Operator-1 O-CU-UP-111)
 
@@ -188,6 +191,7 @@
 (odu-oru O-DU-1122 O-RU-11223)
 
 ;; Topology for Operator C
+(oper Operator-C)
 (op-ocu Operator-C O-CU-CP-131)
 (op-ocu Operator-C O-CU-UP-131)
 

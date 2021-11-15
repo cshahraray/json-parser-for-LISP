@@ -12,7 +12,6 @@ function parseSpacedStrings (operatorName) {
 function main (topologyJSON) {
         const {slices, areas} = topologyJSON.definitions;
         let fileWriter = fs.createWriteStream("./output.txt")
-
         fileWriter.write(';; slices')
         fileWriter.write("\r\n")
 
@@ -49,6 +48,8 @@ function main (topologyJSON) {
             fileWriter.write("\r\n")
 
             fileWriter.write(`;; Topology for ${operator}`)
+            fileWriter.write("\r\n")
+            fileWriter.write(jsonTopParser.operator(opName))
             fileWriter.write("\r\n")
 
 

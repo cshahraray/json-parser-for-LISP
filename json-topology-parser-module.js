@@ -1,4 +1,12 @@
+function parseSpacedStrings (operatorName) {
+    nameArr = operatorName.split(' ')
+    return nameArr.join('-')
+}
+
 const jsonTopologyParser = {
+    operator: function(opName) {
+        return`(oper ${parseSpacedStrings(opName)})`
+    },
     operatorOCU_UP: function (opName, ocuID) {
         return `(op-ocu ${opName} O-CU-UP-${ocuID})`
     },
