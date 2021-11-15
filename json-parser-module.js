@@ -27,7 +27,7 @@ const Json2ListParser = {
     area: function (areaJSON) {
         const {id, name, node} = areaJSON
 
-        return `(area ${id} ${name} ${node})`
+        return `(area ${name} ${node})`
     },
     
     odu2Shop3: function (nodeJSON) {
