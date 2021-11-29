@@ -33,21 +33,35 @@ const Json2ListParser = {
     odu2Shop3: function (nodeJSON) {
         const {id, owner, area, x, y} = nodeJSON
     
-        return `(node ${id} ${parseSpacedStrings(owner)} ${parseArea(area)} ${nodeJSON.function})`
+        return `(node "${id}" ${parseSpacedStrings(owner)} ${parseArea(area)} ${nodeJSON.function})`
 
     },
 
     ocu2Shop3: function (nodeJSON) {
         const {id, owner, area} = nodeJSON;
 
-        return `(node ${id} ${parseSpacedStrings(owner)} ${parseArea(area)} ${nodeJSON.function})`
+        return `(node "${id}" ${parseSpacedStrings(owner)} ${parseArea(area)} ${nodeJSON.function})`
     },
 
     oru2Shop3: function (nodeJSON) {
         const {id, owner, area, x, y, sector} = nodeJSON
         const func = nodeJSON.function;
+        let disaster = "false";
+        let i = 0
 
-        return `(node ${id} ${parseSpacedStrings(owner)} ${parseArea(area)} ${func})`
+        while (i < sector.length && disaster === "false") {
+            if (sector[i].disaster === "true") {
+                disaster = "true"
+            }
+            i++;
+        }
+
+        if (disaster === "true") {
+            return `(node "${id}" ${parseSpacedStrings(owner)} ${parseArea(area)} ${func} "${disaster}")`
+        } else {
+            return `(node "${id}" ${parseSpacedStrings(owner)} ${parseArea(area)} ${func})`
+        }
+
     },
 
     node: function (nodeJSON) {
