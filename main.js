@@ -26,14 +26,14 @@ function main (topologyJSON) {
         )
 
         fileWriter.write(';; nodes')
-        // fileWriter.write("\r\n")
+        fileWriter.write("\r\n")
         const {nodes} = topologyJSON;
         nodes.forEach( node => 
             fileWriter.write(jsonParser.node(node) + "\r\n" )
         )
 
         fileWriter.write(';; topology')
-        // fileWriter.write("\r\n")
+        fileWriter.write("\r\n")
         const mappedTopologyJson = getTopologyMapJson(topology.definitions.slices)
 
         const operators = Object.keys(mappedTopologyJson)
@@ -48,9 +48,9 @@ function main (topologyJSON) {
             // fileWriter.write("\r\n")
 
             fileWriter.write(`;; Topology for ${operator}`)
-            // fileWriter.write("\r\n")
+            fileWriter.write("\r\n")
             fileWriter.write(jsonTopParser.operator(opName))
-            // fileWriter.write("\r\n")
+            fileWriter.write("\r\n")
 
 
 
