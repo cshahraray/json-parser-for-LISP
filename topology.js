@@ -94,7 +94,7 @@ var topology = {
             },
             {
                 id: "s2",
-                name: "Operator 1",
+                name: "Operator B",
                 node: [
                     "O-CU-CP-111",
                     "O-CU-CP-112",
@@ -234,7 +234,7 @@ var topology = {
     },
     nodes: [{
             id: "O-CU-CP-111",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 0,
             function: "O-CU-CP",
             x: 0,
@@ -242,7 +242,7 @@ var topology = {
         },
         {
             id: "O-CU-CP-112",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 0,
             function: "O-CU-CP",
             x: 0,
@@ -282,7 +282,7 @@ var topology = {
         },
         {
             id: "O-CU-UP-111",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 0,
             function: "O-CU-UP",
             x: 0,
@@ -290,7 +290,7 @@ var topology = {
         },
         {
             id: "O-CU-UP-112",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 0,
             function: "O-CU-UP",
             x: 0,
@@ -330,7 +330,7 @@ var topology = {
         },
         {
             id: "O-DU-1111",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 0,
             function: "O-DU",
             x: 0.00,
@@ -338,7 +338,7 @@ var topology = {
         },
         {
             id: "O-DU-1112",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 1,
             function: "O-DU",
             x: 150.00,
@@ -346,7 +346,7 @@ var topology = {
         },
         {
             id: "O-DU-1121",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 2,
             function: "O-DU",
             x: 0.00,
@@ -354,7 +354,7 @@ var topology = {
         },
         {
             id: "O-DU-1122",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 3,
             function: "O-DU",
             x: -150.00,
@@ -426,7 +426,7 @@ var topology = {
         },
         {
             id: "O-RU-11111",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 0,
             function: "O-RU",
             x: 0.00,
@@ -453,7 +453,7 @@ var topology = {
         },
         {
             id: "O-RU-11112",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 0,
             function: "O-RU",
             x: 64.95,
@@ -480,7 +480,7 @@ var topology = {
         },
         {
             id: "O-RU-11113",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 0,
             function: "O-RU",
             x: -64.95,
@@ -507,7 +507,7 @@ var topology = {
         },
         {
             id: "O-RU-11121",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 1,
             function: "O-RU",
             x: 150.00,
@@ -534,7 +534,7 @@ var topology = {
         },
         {
             id: "O-RU-11122",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 1,
             function: "O-RU",
             x: 214.95,
@@ -561,7 +561,7 @@ var topology = {
         },
         {
             id: "O-RU-11123",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 1,
             function: "O-RU",
             x: 85.05,
@@ -588,7 +588,7 @@ var topology = {
         },
         {
             id: "O-RU-11211",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 2,
             function: "O-RU",
             x: 0.00,
@@ -615,7 +615,7 @@ var topology = {
         },
         {
             id: "O-RU-11212",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 2,
             function: "O-RU",
             x: 64.95,
@@ -642,7 +642,7 @@ var topology = {
         },
         {
             id: "O-RU-11213",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 2,
             function: "O-RU",
             x: -64.95,
@@ -669,7 +669,7 @@ var topology = {
         },
         {
             id: "O-RU-11221",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 3,
             function: "O-RU",
             x: -150.00,
@@ -696,7 +696,7 @@ var topology = {
         },
         {
             id: "O-RU-11222",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 3,
             function: "O-RU",
             x: -85.05,
@@ -723,7 +723,7 @@ var topology = {
         },
         {
             id: "O-RU-11223",
-            owner: "Operator 1",
+            owner: "Operator B",
             area: 3,
             function: "O-RU",
             x: -214.95,
