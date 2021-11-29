@@ -1393,9 +1393,397 @@ var topology = {
                     power: 100,
                     direction: 240,
                     disaster: "false"
+                },
+            ]
+        },
+        {
+            id: "O-CU-CP-131",
+            owner: "Operator C",
+            area: 0,
+            function: "O-CU-CP",
+            x: 0,
+            y: 0
+        },
+        {
+            id: "O-CU-UP-131",
+            owner: "Operator C",
+            area: 0,
+            function: "O-CU-CP",
+            x: 0,
+            y: 0
+        },
+        {
+            id: "O-CU-CP-132",
+            owner: "Operator C",
+            area: 0,
+            function: "O-CU-CP",
+            x: 0,
+            y: 0
+        },
+        {
+            id: "O-CU-UP-132",
+            owner: "Operator C",
+            area: 0,
+            function: "O-CU-CP",
+            x: 0,
+            y: 0
+        },
+        {
+            id: "O-DU-1311",
+            owner: "Operator C",
+            area: 0,
+            function: "O-DU",
+            x: 'n/a',
+            y: 'n/a'
+        },
+        {
+            id: "O-DU-1312",
+            owner: "Operator C",
+            area: 1,
+            function: "O-DU",
+            x: 'n/a',
+            y: 'n/a'
+        },
+        {
+            id: "O-DU-1321",
+            owner: "Operator C",
+            area: 2,
+            function: "O-DU",
+            x: 'n/a',
+            y: 'n/a'
+        },
+        {
+            id: "O-DU-1322",
+            owner: "Operator C",
+            area: 3,
+            function: "O-DU",
+            x: 'n/a',
+            y: 'n/a'
+        },
+        {
+            id: "O-RU-13111",
+            owner: "Operator C",
+            area: 0,
+            function: "O-RU",
+            x: 'n/a',
+            y: 'n/a',
+            sector: [{
+                    id: "O-RU-13111-Sector1",
+                    power: 100,
+                    direction: 0,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13111-Sector2",
+                    power: 100,
+                    direction: 120,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13111-Sector3",
+                    power: 100,
+                    direction: 240,
+                    disaster: "false"
                 }
             ]
-        }
+        },
+        {
+            id: "O-RU-13112",
+            owner: "Operator C",
+            area: 0,
+            function: "O-RU",
+            x: 'n/a',
+            y: 'n/a',
+            sector: [{
+                    id: "O-RU-13112-Sector1",
+                    power: 100,
+                    direction: 0,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13112-Sector2",
+                    power: 100,
+                    direction: 120,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13112-Sector3",
+                    power: 100,
+                    direction: 240,
+                    disaster: "false"
+                }
+            ]
+        },
+        {
+            id: "O-RU-13113",
+            owner: "Operator C",
+            area: 0,
+            function: "O-RU",
+            x: 'n/a',
+            y: 'n/a',
+            sector: [{
+                    id: "O-RU-13113-Sector1",
+                    power: 100,
+                    direction: 0,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13113-Sector2",
+                    power: 100,
+                    direction: 120,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13113-Sector3",
+                    power: 100,
+                    direction: 240,
+                    disaster: "false"
+                }
+            ]
+        },
+        {
+            id: "O-RU-13121",
+            owner: "Operator C",
+            area: 1,
+            function: "O-RU",
+            x: 'n/a',
+            y: 'n/a',
+            sector: [{
+                    id: "O-RU-13121-Sector1",
+                    power: 100,
+                    direction: 0,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13121-Sector2",
+                    power: 100,
+                    direction: 120,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13121-Sector3",
+                    power: 100,
+                    direction: 240,
+                    disaster: "false"
+                }
+            ]
+        },
+        {
+            id: "O-RU-13122",
+            owner: "Operator C",
+            area: 1,
+            function: "O-RU",
+            x: 'n/a',
+            y: 'n/a',
+            sector: [{
+                    id: "O-RU-13122-Sector1",
+                    power: 100,
+                    direction: 0,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13122-Sector2",
+                    power: 100,
+                    direction: 120,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13122-Sector3",
+                    power: 100,
+                    direction: 240,
+                    disaster: "false"
+                }
+            ]
+        },
+        {
+            id: "O-RU-13123",
+            owner: "Operator C",
+            area: 1,
+            function: "O-RU",
+            x: 'n/a',
+            y: 'n/a',
+            sector: [{
+                    id: "O-RU-13123-Sector1",
+                    power: 100,
+                    direction: 0,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13123-Sector2",
+                    power: 100,
+                    direction: 120,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13123-Sector3",
+                    power: 100,
+                    direction: 240,
+                    disaster: "false"
+                }
+            ]
+        },
+        {
+            id: "O-RU-13211",
+            owner: "Operator C",
+            area: 2,
+            function: "O-RU",
+            x: 'n/a',
+            y: 'n/a',
+            sector: [{
+                    id: "O-RU-13211-Sector1",
+                    power: 100,
+                    direction: 0,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13211-Sector2",
+                    power: 100,
+                    direction: 120,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13211-Sector3",
+                    power: 100,
+                    direction: 240,
+                    disaster: "false"
+                }
+            ]
+        },
+        {
+            id: "O-RU-13212",
+            owner: "Operator C",
+            area: 2,
+            function: "O-RU",
+            x: 'n/a',
+            y: 'n/a',
+            sector: [{
+                    id: "O-RU-13212-Sector1",
+                    power: 100,
+                    direction: 0,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13212-Sector2",
+                    power: 100,
+                    direction: 120,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13212-Sector3",
+                    power: 100,
+                    direction: 240,
+                    disaster: "false"
+                }
+            ]
+        },
+        {
+            id: "O-RU-13213",
+            owner: "Operator C",
+            area: 2,
+            function: "O-RU",
+            x: 'n/a',
+            y: 'n/a',
+            sector: [{
+                    id: "O-RU-13213-Sector1",
+                    power: 100,
+                    direction: 0,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13213-Sector2",
+                    power: 100,
+                    direction: 120,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13213-Sector3",
+                    power: 100,
+                    direction: 240,
+                    disaster: "false"
+                }
+            ]
+        },
+        {
+            id: "O-RU-13221",
+            owner: "Operator C",
+            area: 3,
+            function: "O-RU",
+            x: 'n/a',
+            y: 'n/a',
+            sector: [{
+                    id: "O-RU-13221-Sector1",
+                    power: 100,
+                    direction: 0,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13221-Sector2",
+                    power: 100,
+                    direction: 120,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13221-Sector3",
+                    power: 100,
+                    direction: 240,
+                    disaster: "false"
+                }
+            ]
+        },
+        {
+            id: "O-RU-13222",
+            owner: "Operator C",
+            area: 3,
+            function: "O-RU",
+            x: 'n/a',
+            y: 'n/a',
+            sector: [{
+                    id: "O-RU-13222-Sector1",
+                    power: 100,
+                    direction: 0,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13222-Sector2",
+                    power: 100,
+                    direction: 120,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13222-Sector3",
+                    power: 100,
+                    direction: 240,
+                    disaster: "false"
+                }
+            ]
+        },
+        {
+            id: "O-RU-13223",
+            owner: "Operator C",
+            area: 3,
+            function: "O-RU",
+            x: 'n/a',
+            y: 'n/a',
+            sector: [{
+                    id: "O-RU-13223-Sector1",
+                    power: 100,
+                    direction: 0,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13223-Sector2",
+                    power: 100,
+                    direction: 120,
+                    disaster: "false"
+                },
+                {
+                    id: "O-RU-13223-Sector3",
+                    power: 100,
+                    direction: 240,
+                    disaster: "false"
+                }
+            ]
+        },
     ],
     links: [],
 };
