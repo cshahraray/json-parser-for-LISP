@@ -57,7 +57,7 @@ const Json2ListParser = {
         }
 
         if (disaster === "true") {
-            return `(node "${id}" ${parseSpacedStrings(owner)} ${parseArea(area)} ${func} "${disaster}")`
+            return `(node "${id}" ${parseSpacedStrings(owner)} ${parseArea(area)} ${func} failed)`
         } else {
             return `(node "${id}" ${parseSpacedStrings(owner)} ${parseArea(area)} ${func})`
         }

@@ -13,7 +13,7 @@ function main (topologyJSON) {
         const {slices, areas} = topologyJSON.definitions;
         let fileWriter = fs.createWriteStream("./output.txt")
         // fileWriter.write(';; slices')
-        fileWriter.write("\r\n")
+        // fileWriter.write("\r\n")
 
         // slices.forEach( slice => {
         //     fileWriter.write(jsonParser.slice(slice) + "\r\n")
@@ -26,14 +26,14 @@ function main (topologyJSON) {
         )
 
         fileWriter.write(';; nodes')
-        fileWriter.write("\r\n")
+        // fileWriter.write("\r\n")
         const {nodes} = topologyJSON;
         nodes.forEach( node => 
             fileWriter.write(jsonParser.node(node) + "\r\n" )
         )
 
         fileWriter.write(';; topology')
-        fileWriter.write("\r\n")
+        // fileWriter.write("\r\n")
         const mappedTopologyJson = getTopologyMapJson(topology.definitions.slices)
 
         const operators = Object.keys(mappedTopologyJson)
@@ -45,17 +45,17 @@ function main (topologyJSON) {
 
         operators.forEach(operator => {
             opName = parseSpacedStrings(operator)
-            fileWriter.write("\r\n")
+            // fileWriter.write("\r\n")
 
             fileWriter.write(`;; Topology for ${operator}`)
-            fileWriter.write("\r\n")
+            // fileWriter.write("\r\n")
             fileWriter.write(jsonTopParser.operator(opName))
-            fileWriter.write("\r\n")
+            // fileWriter.write("\r\n")
 
 
 
             opOCUS = Object.keys(mappedTopologyJson[operator])
-            fileWriter.write("\r\n")
+            // fileWriter.write("\r\n")
 
             opOCUS.forEach( ocu => {
                 ocuID = jsonTopParser.getNodeId(ocu)
@@ -63,11 +63,11 @@ function main (topologyJSON) {
                 fileWriter.write(jsonTopParser.operatorOCU_UP(opName, ocuID) + "\r\n")
             })
 
-            fileWriter.write("\r\n")
-            fileWriter.write("\r\n")
+            // fileWriter.write("\r\n")
+            // fileWriter.write("\r\n")
 
-            fileWriter.write("\r\n")
-            fileWriter.write("\r\n")
+            // fileWriter.write("\r\n")
+            // fileWriter.write("\r\n")
 
 
             opOCUS.forEach( ocu => {
@@ -77,8 +77,8 @@ function main (topologyJSON) {
                 ocuODUs.forEach( odu => {
                     fileWriter.write(jsonTopParser.ocuOdu(ocuID, odu) + "\r\n")
                 })
-                fileWriter.write("\r\n")
-                fileWriter.write("\r\n")
+                // fileWriter.write("\r\n")
+                // fileWriter.write("\r\n")
 
             })
 
@@ -94,8 +94,8 @@ function main (topologyJSON) {
                 })
             })
 
-            fileWriter.write("\r\n")
-            fileWriter.write("\r\n")
+            // fileWriter.write("\r\n")
+            // fileWriter.write("\r\n")
 
         })
             

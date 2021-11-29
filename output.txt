@@ -1,11 +1,9 @@
-
 ;; areas
 (area North (O-CU-CP-111,O-CU-CP-112,O-CU-CP-121,O-CU-CP-122,O-CU-CP-131,O-CU-CP-132,O-CU-UP-111,O-CU-UP-112,O-CU-UP-121,O-CU-UP-122,O-CU-UP-131,O-CU-UP-132,O-DU-1111,O-DU-1211,O-DU-1311,O-RU-11111,O-RU-11112,O-RU-11113,O-RU-12111,O-RU-12112,O-RU-12113,O-RU-13111,O-RU-13112,O-RU-13113))
 (area East (O-DU-1112,O-DU-1212,O-DU-1312,O-RU-11121,O-RU-11122,O-RU-11123,O-RU-12121,O-RU-12122,O-RU-12123,O-RU-13121,O-RU-13122,O-RU-13123))
 (area South (O-DU-1121,O-DU-1221,O-DU-1321,O-RU-11211,O-RU-11212,O-RU-11213,O-RU-12211,O-RU-12212,O-RU-12213,O-RU-12311,O-RU-12312,O-RU-12313))
 (area West (O-DU-1122,O-DU-1222,O-DU-1322,O-RU-11221,O-RU-11222,O-RU-11223,O-RU-12221,O-RU-12222,O-RU-12223,O-RU-13221,O-RU-13222,O-RU-13223))
-;; nodes
-(node "O-CU-CP-111" Operator-1 North O-CU-CP)
+;; nodes(node "O-CU-CP-111" Operator-1 North O-CU-CP)
 (node "O-CU-CP-112" Operator-1 North O-CU-CP)
 (node "O-CU-CP-121" Operator-A North O-CU-CP)
 (node "O-CU-CP-122" Operator-A North O-CU-CP)
@@ -29,48 +27,43 @@
 (node "O-DU-1212" Operator-A East O-DU)
 (node "O-DU-1221" Operator-A South O-DU)
 (node "O-DU-1222" Operator-A West O-DU)
-(node "O-RU-11111" Operator-1 North O-RU "true")
-(node "O-RU-11112" Operator-1 North O-RU "true")
-(node "O-RU-11113" Operator-1 North O-RU "true")
+(node "O-RU-11111" Operator-1 North O-RU failed)
+(node "O-RU-11112" Operator-1 North O-RU failed)
+(node "O-RU-11113" Operator-1 North O-RU failed)
 (node "O-RU-11121" Operator-1 East O-RU)
 (node "O-RU-11122" Operator-1 East O-RU)
 (node "O-RU-11123" Operator-1 East O-RU)
 (node "O-RU-11211" Operator-1 South O-RU)
 (node "O-RU-11212" Operator-1 South O-RU)
 (node "O-RU-11213" Operator-1 South O-RU)
-(node "O-RU-11221" Operator-1 West O-RU "true")
-(node "O-RU-11222" Operator-1 West O-RU "true")
-(node "O-RU-11223" Operator-1 West O-RU "true")
+(node "O-RU-11221" Operator-1 West O-RU failed)
+(node "O-RU-11222" Operator-1 West O-RU failed)
+(node "O-RU-11223" Operator-1 West O-RU failed)
 (node "O-RU-12111" Operator-A North O-RU)
 (node "O-RU-12112" Operator-A North O-RU)
 (node "O-RU-12113" Operator-A North O-RU)
 (node "O-RU-12121" Operator-A East O-RU)
 (node "O-RU-12122" Operator-A East O-RU)
 (node "O-RU-12123" Operator-A East O-RU)
-(node "O-RU-12211" Operator-A South O-RU "true")
-(node "O-RU-12212" Operator-A South O-RU "true")
-(node "O-RU-12213" Operator-A South O-RU "true")
-(node "O-RU-12221" Operator-A West O-RU "true")
-(node "O-RU-12222" Operator-A West O-RU "true")
-(node "O-RU-12223" Operator-A West O-RU "true")
+(node "O-RU-12211" Operator-A South O-RU failed)
+(node "O-RU-12212" Operator-A South O-RU failed)
+(node "O-RU-12213" Operator-A South O-RU failed)
+(node "O-RU-12221" Operator-A West O-RU failed)
+(node "O-RU-12222" Operator-A West O-RU failed)
+(node "O-RU-12223" Operator-A West O-RU failed)
 (node "O-RU-12111" Operator-A North O-RU)
 (node "O-RU-12112" Operator-A North O-RU)
 (node "O-RU-12113" Operator-A North O-RU)
 (node "O-RU-12121" Operator-A East O-RU)
 (node "O-RU-12122" Operator-A East O-RU)
 (node "O-RU-12123" Operator-A East O-RU)
-(node "O-RU-12211" Operator-A South O-RU "true")
-(node "O-RU-12212" Operator-A South O-RU "true")
-(node "O-RU-12213" Operator-A South O-RU "true")
+(node "O-RU-12211" Operator-A South O-RU failed)
+(node "O-RU-12212" Operator-A South O-RU failed)
+(node "O-RU-12213" Operator-A South O-RU failed)
 (node "O-RU-12221" Operator-A West O-RU)
 (node "O-RU-12222" Operator-A West O-RU)
 (node "O-RU-12223" Operator-A West O-RU)
-;; topology
-
-;; Topology for Public Safety
-(oper Public-Safety)
-
-(op-ocu Public-Safety O-CU-CP-111)
+;; topology;; Topology for Public Safety(oper Public-Safety)(op-ocu Public-Safety O-CU-CP-111)
 (op-ocu Public-Safety O-CU-UP-111)
 (op-ocu Public-Safety O-CU-CP-112)
 (op-ocu Public-Safety O-CU-UP-112)
@@ -82,34 +75,18 @@
 (op-ocu Public-Safety O-CU-UP-131)
 (op-ocu Public-Safety O-CU-CP-132)
 (op-ocu Public-Safety O-CU-UP-132)
-
-
-
-
 (ocu-odu O-CU-CP-111 O-CU-UP-111 O-DU-1111)
 (ocu-odu O-CU-CP-111 O-CU-UP-111 O-DU-1112)
-
-
 (ocu-odu O-CU-CP-112 O-CU-UP-112 O-DU-1121)
 (ocu-odu O-CU-CP-112 O-CU-UP-112 O-DU-1122)
-
-
 (ocu-odu O-CU-CP-121 O-CU-UP-121 O-DU-1211)
 (ocu-odu O-CU-CP-121 O-CU-UP-121 O-DU-1212)
-
-
 (ocu-odu O-CU-CP-122 O-CU-UP-122 O-DU-1221)
 (ocu-odu O-CU-CP-122 O-CU-UP-122 O-DU-1222)
-
-
 (ocu-odu O-CU-CP-131 O-CU-UP-131 O-DU-1311)
 (ocu-odu O-CU-CP-131 O-CU-UP-131 O-DU-1312)
-
-
 (ocu-odu O-CU-CP-132 O-CU-UP-132 O-DU-1321)
 (ocu-odu O-CU-CP-132 O-CU-UP-132 O-DU-1322)
-
-
 (odu-oru O-DU-1111 O-RU-11111)
 (odu-oru O-DU-1111 O-RU-11112)
 (odu-oru O-DU-1111 O-RU-11113)
@@ -146,28 +123,14 @@
 (odu-oru O-DU-1322 O-RU-13221)
 (odu-oru O-DU-1322 O-RU-13222)
 (odu-oru O-DU-1322 O-RU-13223)
-
-
-
-;; Topology for Operator A
-(oper Operator-A)
-
-(op-ocu Operator-A O-CU-CP-121)
+;; Topology for Operator A(oper Operator-A)(op-ocu Operator-A O-CU-CP-121)
 (op-ocu Operator-A O-CU-UP-121)
 (op-ocu Operator-A O-CU-CP-122)
 (op-ocu Operator-A O-CU-UP-122)
-
-
-
-
 (ocu-odu O-CU-CP-121 O-CU-UP-121 O-DU-1211)
 (ocu-odu O-CU-CP-121 O-CU-UP-121 O-DU-1212)
-
-
 (ocu-odu O-CU-CP-122 O-CU-UP-122 O-DU-1221)
 (ocu-odu O-CU-CP-122 O-CU-UP-122 O-DU-1222)
-
-
 (odu-oru O-DU-1211 O-RU-12111)
 (odu-oru O-DU-1211 O-RU-12112)
 (odu-oru O-DU-1211 O-RU-12113)
@@ -180,28 +143,14 @@
 (odu-oru O-DU-1222 O-RU-12221)
 (odu-oru O-DU-1222 O-RU-12222)
 (odu-oru O-DU-1222 O-RU-12223)
-
-
-
-;; Topology for Operator 1
-(oper Operator-1)
-
-(op-ocu Operator-1 O-CU-CP-111)
+;; Topology for Operator 1(oper Operator-1)(op-ocu Operator-1 O-CU-CP-111)
 (op-ocu Operator-1 O-CU-UP-111)
 (op-ocu Operator-1 O-CU-CP-112)
 (op-ocu Operator-1 O-CU-UP-112)
-
-
-
-
 (ocu-odu O-CU-CP-111 O-CU-UP-111 O-DU-1111)
 (ocu-odu O-CU-CP-111 O-CU-UP-111 O-DU-1112)
-
-
 (ocu-odu O-CU-CP-112 O-CU-UP-112 O-DU-1121)
 (ocu-odu O-CU-CP-112 O-CU-UP-112 O-DU-1122)
-
-
 (odu-oru O-DU-1111 O-RU-11111)
 (odu-oru O-DU-1111 O-RU-11112)
 (odu-oru O-DU-1111 O-RU-11113)
@@ -214,28 +163,14 @@
 (odu-oru O-DU-1122 O-RU-11221)
 (odu-oru O-DU-1122 O-RU-11222)
 (odu-oru O-DU-1122 O-RU-11223)
-
-
-
-;; Topology for Operator C
-(oper Operator-C)
-
-(op-ocu Operator-C O-CU-CP-131)
+;; Topology for Operator C(oper Operator-C)(op-ocu Operator-C O-CU-CP-131)
 (op-ocu Operator-C O-CU-UP-131)
 (op-ocu Operator-C O-CU-CP-132)
 (op-ocu Operator-C O-CU-UP-132)
-
-
-
-
 (ocu-odu O-CU-CP-131 O-CU-UP-131 O-DU-1311)
 (ocu-odu O-CU-CP-131 O-CU-UP-131 O-DU-1312)
-
-
 (ocu-odu O-CU-CP-132 O-CU-UP-132 O-DU-1321)
 (ocu-odu O-CU-CP-132 O-CU-UP-132 O-DU-1322)
-
-
 (odu-oru O-DU-1311 O-RU-13111)
 (odu-oru O-DU-1311 O-RU-13112)
 (odu-oru O-DU-1311 O-RU-13113)
@@ -248,5 +183,3 @@
 (odu-oru O-DU-1322 O-RU-13221)
 (odu-oru O-DU-1322 O-RU-13222)
 (odu-oru O-DU-1322 O-RU-13223)
-
-
